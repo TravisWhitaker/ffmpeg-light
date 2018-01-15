@@ -2,7 +2,6 @@
              GeneralizedNewtypeDeriving #-}
 module Codec.FFmpeg.Types where
 import Codec.FFmpeg.Enums
-import Control.Applicative
 import Control.Monad (zipWithM_,when)
 import Foreign.C.String (CString)
 import Foreign.C.Types

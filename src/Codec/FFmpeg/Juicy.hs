@@ -8,19 +8,14 @@ import Codec.FFmpeg.Encode
 import Codec.FFmpeg.Enums
 import Codec.FFmpeg.Internal.Linear (V2(..))
 import Codec.FFmpeg.Types
-import Control.Applicative
-import Control.Arrow (first, (&&&))
+import Control.Arrow (first)
 import Control.Monad ((>=>))
 import Control.Monad.Except
-import Control.Monad.IO.Class
-import Control.Monad.Trans.Class
 import Control.Monad.Trans.Maybe
 import Data.Foldable (traverse_)
 import qualified Data.Vector.Storable as V
 import qualified Data.Vector.Storable.Mutable as VM
 import Foreign.C.Types
-import Foreign.Marshal.Array (advancePtr, copyArray)
-import Foreign.Ptr (castPtr, Ptr)
 import Foreign.Storable (sizeOf)
 import Data.Maybe (maybe)
 
